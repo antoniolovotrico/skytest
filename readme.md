@@ -12,8 +12,11 @@ Individuare i bug:
    <img src="https://cdn3.iconfinder.com/data/icons/marketing-e-commerce/128/icons_-_marketing-41-512.png" width="25px" alt=""> , l'attributo width dovrebbe quindi essere scritto in questa forma width="25"
 
 4. Il sito non è responsive, le icone di user, heart e cart vanno a capo ma le voci del menu no. Così facendo diminuendo la width il container restringe in maniera non proporzionale rispetto al nav-container finendo in questo modo fuori dal div container principale. Di seguito la soluzione più immediata, ovvero modificare la width del nav-container in max-width.
+
    .container > .nav-container{
    display: block;
    float: left;
    max-width: 700px;
    }
+
+   Task 2
