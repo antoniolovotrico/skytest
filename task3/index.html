@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task3</title>
+    <style type="text/css">
+      body {
+        display: flex;
+        justify-content: space-around;
+      }
+      .different,
+      .specialChildren {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        margin: 5px;
+      }
+      .specialDiv {
+        width: 40%;
+        height: 100%;
+        border: 3px solid green;
+        text-align: center;
+      }
+      .active {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="specialDiv">
+      Div Contenitore Classe specialDiv,clicca al mio interno
+      <div class="different">Div Classe different</div>
+      <div class="different">Div Classe different</div>
+      <div class="specialChildren" data-specialvalue="skylabs">
+        Primo div con classe "specialChildren"
+      </div>
+      <div class="specialChildren" data-specialvalue="novalue">
+        Secondo div con classe "specialChildren"
+      </div>
+    </div>
+    <div class="specialDiv">
+      Div Contenitore Classe specialDiv,clicca al mio interno
+      <div class="different">Div Classe different</div>
+      <div class="specialChildren" data-specialvalue="skylabs">
+        Primo div con classe "specialChildren"
+      </div>
+      <div class="different">Div Classe different</div>
+
+      <div class="specialChildren" data-specialvalue="novalue">
+        Secondo div con classe "specialChildren"
+      </div>
+    </div>
+
+    <!-- Jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- link to javascript file -->
+    <script src="./dist/app.js"></script>
+  </body>
+</html>

@@ -19,4 +19,18 @@ Individuare i bug:
    max-width: 700px;
    }
 
-   Task 2
+Task 2
+open the file task2.html
+
+Task 3
+
+All' interno della cartella task3 aprire il file index.html
+Ho effettuato l'installazione di laravel mix per la compilazione del js.
+
+il codice javascript si trova all'interno della cartella src in app.javascriptle operazioni effettuate sono le seguenti:
+
+  1- selezione tutti gli elementi con classe 'specialDiv'
+  2- il metodo closest restituisce il primo elemento che corrisponde al selettore.
+  3- il metodo find cerca tra tutti gli elementi discendenti da 'specialDiv' e seleziona tramite :first il primo elemento con classe specialChildren.
+  4- All'elemento così trovato  tramite il metodo toggleClass assegno e rimuovo una classe active ad ogni click.
+  5- tramite il metodo each ciclo all'interno dell'oggetto Jquery ed eseguo una funzione che effettui il console log del valore del data-specialvalue tramite il metodo data  e l'indicazione del selettore
