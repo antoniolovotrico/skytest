@@ -55,6 +55,9 @@ const shoesDiv = document.querySelector(".shoes");
 const shoesImgRight = document.querySelector(".shoes_img_right");
 const shoesImgLeft = document.querySelector(".shoes_img_left");
 const selectSize = document.getElementById("select");
+const cartBtn = document.querySelector("#add_cart");
+const cartPop = document.querySelector(".pop_hide");
+const modalBtn = document.querySelector("#modal_btn");
 
 for (let link of linkMenu) {
   menuHeader.innerHTML += `<li><a href="#">${link}</a></li>`;
@@ -88,4 +91,37 @@ for (let shoe of shoes) {
       }
     }
   }
+}
+
+selectSize.addEventListener("change", (event) => {
+  //creare una variabile che identifichi la scelta compiuta con event change
+  var choice = selectSize.options[selectSize.selectedIndex].value;
+  console.log(choice);
+  shoes[0]["choice"] = choice;
+  console.log(shoes);
+});
+
+cartBtn.addEventListener("click", (event) => {
+  addToCart(shoes, cartPop);
+});
+
+/* ---- FUNCTIONS ----*/
+
+function addToCart(model, popCart) {
+  popCart.classList.remove("pop_hide");
+  popCart.classList.add("pop_show");
+
+  model.forEach((element) => {
+    popCart.innerHTML = `
+    <h4>Model : ${element.name}</h4>
+    <h4>Price : ${element.price} €</h4>
+    <h4>Size :${element.choice}</h4>
+    <button id="modal_btn" onclick="closeModal(cartPop)">Close</button>
+    `;
+  });
+}
+
+function closeModal(popCart) {
+  popCart.classList.remove("pop_show");
+  popCart.classList.add("pop_hide");
 }
