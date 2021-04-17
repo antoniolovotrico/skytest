@@ -32,17 +32,12 @@ li a {
 
 main {
   height: 80vh;
-  position: relative;
 }
 .pop_hide {
   display: none;
 }
 .pop_show {
   display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   height: 200px;
   width: 300px;
   background-color: grey;
@@ -63,6 +58,18 @@ main {
   display: flex;
   flex-direction: column;
 }
+.patch {
+  display: flex;
+}
+.patch_inner,
+.patch_outer {
+  display: flex;
+  flex-direction: column;
+}
+.patch_img {
+  width: 100px;
+  border: 1px solid lightblue;
+}
 .shoes_img_right,
 .shoes_img_left {
   display: flex;
@@ -71,7 +78,25 @@ main {
   width: 250px;
 }
 .shoe_img {
+  /* position: relative;
+  top: 0;
+  left: 0; */
   height: 100px;
+  
+}
+/* .popi{
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100px;
+  
+} */
+.app_img_hide {
+  height: 50px;
+  position: absolute;
+  top: 53%;
+  left: 37%;
+  transform: translate(-50%, -50%);
 }
 
 footer {
