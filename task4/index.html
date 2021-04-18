@@ -5,31 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png"/>
     <title>task4</title>
   </head>
   <body>
     <header>
+      <img id="logo" src="assets/img/logo_transparent.png" alt="">
       <nav>
         <ul></ul>
       </nav>
     </header>
     <main>
-      <div class="shoes_container">
+      <section class="shoes_container">
         <div class="shoe_desc">
           <div class="shoes"></div>
           <select name="size_select" id="select"></select>
-          <button id="add_cart">Add To Cart</button>
+          <h2>Applica le Patch Che preferisci</h2>
           <div class="patch">
-            <div class="patch_inner"></div>
-            <div class="patch_outer"></div>
+            <div class="patch_inner">
+              <h3>Inner</h3>
+            </div>
+            <div class="patch_outer">
+              <h3>Outer</h3>
+            </div>
           </div>
+          <button id="add_cart">Add To Cart</button>
         </div>
-        <div class="shoes_img_right"></div>
-        <div class="shoes_img_left"></div>
+        <div class="image_container">
+          <div class="show_patch">
+            <div class="attach_container_1">
+              <img class="attach" src="assets/img/scarpa-sinistra/left_inner_8051124195013_6.png" alt="">
+            </div>
+            <div class="attach_container_2">
+              <img class="attach" src="assets/img/scarpa-sinistra/left_outer_8051124195013_5.png" alt="">
+            </div>
+          </div>
+          <div class="left_right">
+            <div class="shoes_img_right"></div>
+            <div class="shoes_img_left"></div>
+          </div>   
+        </div>
         <div class="pop_hide"></div>
-      </div>
+      </section>
+      
     </main>
     <footer>
+      <img id="logo" src="assets/img/logo_transparent.png" alt="">
       <div class="foot">
         <ul></ul>
       </div>
@@ -37,3 +60,6 @@
     <script type="text/javascript" src="assets/js/main.js"></script>
   </body>
 </html>
+
+
+
