@@ -38,7 +38,7 @@ body {
 header {
   display: flex;
   justify-content: space-around;
-  background: linear-gradient(to right, #9a8478, #1e130c); 
+  background: linear-gradient(to right, white, #9a8478, #1e130c); 
   height: 12%;
   flex-shrink: 0;
 }
@@ -83,7 +83,7 @@ main {
   position:relative;
   justify-content:center;
   align-items:center;
-  background: linear-gradient(to left, #9a8478, #1e130c); 
+  background: linear-gradient(to left, white, #9a8478, #1e130c); 
 }
 .shoe_desc {
   display: flex;
@@ -254,6 +254,6 @@ footer {
   width:100%;
   display: flex;
   justify-content: center;
-  background: linear-gradient(to right, #9a8478, #1e130c); 
+  background: linear-gradient(to right, white, #9a8478, #1e130c); 
   flex-shrink: 0;
 }

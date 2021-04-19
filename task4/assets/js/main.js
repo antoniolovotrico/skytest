@@ -1,3 +1,4 @@
+// Data Section
 const linkMenu = ["Home", "Products", "Cart"];
 var shoes = [
   {
@@ -88,11 +89,13 @@ const patchOuter = document.querySelector(".patch_outer");
 const attachContInn = document.querySelector(".attach_container_1");
 const attachContOut = document.querySelector(".attach_container_2");
 
+// Ciclo per stampare i link di menù e Footer
 for (let link of linkMenu) {
   menuHeader.innerHTML += `<li><a href="#">${link}</a></li>`;
   menuFooter.innerHTML += `<li><a href="#">${link}</a></li>`;
 }
 
+// All'interno di questo ciclo verranno stampate tutti i dati riguardanti oggetto "shoes"
 for (let shoe of shoes) {
   shoesDiv.innerHTML += `<h1>${shoe.name}</h1>
     <h3>${shoe.price} €</h3>
@@ -138,18 +141,19 @@ for (let shoe of shoes) {
   }
 }
 
-
+// Al change del select size salvo l'input in un oggetto carrello 
 selectSize.addEventListener("change", (event) => {
   //creare una variabile che identifichi la scelta compiuta con event change
   var choice = selectSize.options[selectSize.selectedIndex].value;
-  carrello["choice"] = choice;
-  
+  carrello["choice"] = choice; 
 });
 
+// Al click sul btn di aggiunta al carrello attivo la funzione Add to Cart
 cartBtn.addEventListener("click", (event) => {
   addToCart(carrello, cartPop);
 });
 
+// Funzione per inserire le patches interne o esterne scelte con un click
 function attPatchOuter(i){
   
   for (let shoe of shoes) {

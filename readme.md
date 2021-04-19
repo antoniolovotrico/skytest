@@ -1,3 +1,6 @@
+La Repository ad eccezione della task 1 che come da richiesta è solo descrittiva è suddivisa in task(ognuna con la propria folder ed il relativo file index.html).
+
+
 Task 1
 Individuare i bug:
 
@@ -20,7 +23,7 @@ Individuare i bug:
    }
 
 Task 2
-open the file task2.html
+open the file task2/index.html
 
 Task 3
 
@@ -29,8 +32,13 @@ Ho effettuato l'installazione di laravel mix per la compilazione del js.
 
 il codice javascript si trova all'interno della cartella src in app.javascriptle operazioni effettuate sono le seguenti:
 
-  1- selezione tutti gli elementi con classe 'specialDiv'
-  2- il metodo closest restituisce il primo elemento che corrisponde al selettore.
-  3- il metodo find cerca tra tutti gli elementi discendenti da 'specialDiv' e seleziona tramite :first il primo elemento con classe specialChildren.
-  4- All'elemento così trovato  tramite il metodo toggleClass assegno e rimuovo una classe active ad ogni click.
-  5- tramite il metodo each ciclo all'interno dell'oggetto Jquery ed eseguo una funzione che effettui il console log del valore del data-specialvalue tramite il metodo data  e l'indicazione del selettore
+  1. selezione tutti gli elementi con classe 'specialDiv'
+  2. il metodo closest restituisce il primo elemento che corrisponde al selettore.
+  3. il metodo find cerca tra tutti gli elementi discendenti da 'specialDiv' e seleziona tramite :first il primo elemento con classe specialChildren.
+  4. All'elemento così trovato  tramite il metodo toggleClass assegno e rimuovo una classe active ad ogni click.
+  5. tramite il metodo each ciclo all'interno dell'oggetto Jquery ed eseguo una funzione che effettui il console log del valore del data-specialvalue tramite il metodo data  e l'indicazione del selettore
+
+
+  Task 4
+
+  Sviluppata pagina per la personalizzazione di un paio di scarpe come richiesto. All'interno del codice sono presenti i commenti all'interno dei vari file contenenti una descrizione di quanto effettuato.

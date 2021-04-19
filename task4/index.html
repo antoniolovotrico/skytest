@@ -4,21 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link al Css -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Link  google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- favicon -->
     <link rel="icon" type="image/png" href="assets/img/favicon.png"/>
     <title>task4</title>
   </head>
   <body>
+
+    <!-- Header and navbar -->
     <header>
       <img id="logo" src="assets/img/logo_transparent.png" alt="">
       <nav>
         <ul></ul>
       </nav>
     </header>
+     <!-- //Header and navbar -->
     <main>
+      <!-- Main section of the page -->
       <section class="shoes_container">
+        <!-- left column with info,size select and patches -->
         <div class="shoe_desc">
           <div class="shoes"></div>
           <select name="size_select" id="select"></select>
@@ -32,7 +40,9 @@
             </div>
           </div>
           <button id="add_cart">Add To Cart</button>
+          <!-- //left column with info,size select and patches -->
         </div>
+        <!-- Container of shoes images -->
         <div class="image_container">
           <div class="show_patch">
             <div class="attach_container_1">
@@ -47,16 +57,23 @@
             <div class="shoes_img_left"></div>
           </div>   
         </div>
+        <!-- //Container of shoes images -->
+
+        <!-- Modal PopUp -->
         <div class="pop_hide"></div>
+        <!-- Modal PopUp -->
       </section>
-      
+      <!-- //Main section of the page -->
     </main>
+    
     <footer>
       <img id="logo" src="assets/img/logo_transparent.png" alt="">
       <div class="foot">
         <ul></ul>
       </div>
     </footer>
+
+    <!-- link to main.js -->
     <script type="text/javascript" src="assets/js/main.js"></script>
   </body>
 </html>
